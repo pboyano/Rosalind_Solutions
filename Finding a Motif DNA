@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+'''
+A solution to a ROSALIND bioinformatics problem.
+
+Problem Title: Finding a Motif in DNA
+Rosalind ID: SUBS
+Rosalind #: 009
+URL: http://rosalind.info/problems/subs/
+'''
+
+s = "CGCAACGATGACCGATGACCGATGACGTAGCGATGACACGATGTGACACGATGACCATACGATGACCATCTACGATGACCAATGTGGCCGATGACTGCGATGACCGATGACGGCGATGACAGCAGTCCGATGAC"
+sub = 'CGATGACCG'
+
+for i in range(len(s)-9):
+    if s[i:i+9] == sub:
+        print(i+1)
